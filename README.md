@@ -1,6 +1,6 @@
-This Git repository holds the code from the Treehouse __5 Skills to Learn to Become a Backend Web Developer__ blog post. You'll need Python installed to run this code.
+This Git repository holds the code from the Treehouse __5 Skills to Learn to Become a Backend Web Developer__ blog post. Clone the repository, or download and unzip it to a directory. You'll need Python installed to run this code.
 
-To set up a Sqlite3 database in the current directory, go to your system console or terminal and run:
+To set up a Sqlite3 database, go to your system console or terminal, and change to the directory where you saved this project. Run this command:
 
 ``` shell
 python setup.py
