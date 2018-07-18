@@ -1,5 +1,6 @@
-from flask import Flask, escape, render_template, jsonify
+from flask import Flask, render_template # Modified
 import sqlite3 as sql
+import json # Added
 app = Flask(__name__)
 
 def articles():
@@ -16,11 +17,9 @@ def main_page():
     records = articles()
     return render_template("main.html", articles = records)
 
+# New
 @app.route('/articles.json')
 def articles_json():
-    article_list = []
-    for record in articles():
-        article_list.append({'title': record['title'], 'content': record['content']})
-    return jsonify(article_list)
+    return json.dumps([dict(row) for row in articles()])
 
 app.run()
