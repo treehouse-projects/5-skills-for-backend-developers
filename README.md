@@ -2,7 +2,7 @@ This Git repository holds the code from the Treehouse __5 Skills to Learn to Bec
 
 To set up a Sqlite3 database, go to your system console or terminal, and change to the directory where you saved this project. Run this command:
 
-``` shell
+```
 python setup.py
 ```
 
@@ -14,7 +14,7 @@ python blog.py
 
 You'll see output like this:
 
-``` shell
+```
  * Serving Flask app "blog" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
